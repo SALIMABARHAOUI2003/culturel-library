@@ -1,0 +1,1 @@
+alert('Bonjour sur la page de contact');

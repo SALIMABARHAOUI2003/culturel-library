@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        body{
+               background-color:  rgba(250, 249, 249, 0.952);
+               width: 100%;
+               height: 100%;
+           }
+           header{
+  position: fixed;
+  width: 1400px;
+  height: 150px;
+  background:rgba(114, 28, 131, 0.952) ;
+}
+
+nav{
+  position: fixed;
+  width: 1400px;
+  height: 100px;
+  background:  rgba(250, 249, 249, 0.952);
+}
+main{
+  width: 1400px;
+  height: 900px;
+  background: rgba(114, 28, 131, 0.952);
+}
+main article{
+  width: 1400px ;
+  height: 920px;
+  float: center;
+}
+aside{
+  width: 50px;
+  float: left;
+  background: lightcoral;
+}
+footer{
+  clear: both;
+  width: 1400px;
+  height: 50px;
+  background:  rgba(114, 28, 131, 0.952); 
+}
+h2:hover{
+  animation-name:changeColor;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 4;
+}
+H1{
+  color: black;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+  text-decoration: none;
+  color: rgba(114, 28, 131, 0.952);
+  font-style: normal;
+}
+a p{
+  color: black;
+  text-shadow: 2px 2px 4px  rgba(250, 249, 249, 0.952);
+}
+            /* the navigation menu */
+            .navbar{
+                overflow: hidden;
+                background-color: #333;
+            }
+            /* Navigation links */
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* the subnavigation menu */
+            .subnav{
+                float: left;
+                overflow: hidden;
+            }
+            /* Subnav button */
+            .subnav .subnavbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0px;
+            }
+            
+    /* Add a red background color to navigation links on hover */
+    .navbar a:hover, .subnav:hover .subnavbtn {
+        left: 285px;
+      background-color: rgb(12, 12, 12);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 290px;
+      background-color: rgb(8, 8, 8);
+      width: 6%;
+      z-index: 1;
+    }
+    .subnav-content a{
+       display: block;
+       padding: 5px 0px;
+    }
+    /* Style the subnav links */
+    .subnav-content a {
+      left: 285px;
+      float: left;
+      color: rgba(250, 249, 249, 0.952);
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .subnav-content a:hover {
+        left: 285px ;
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    /* the navigation menu */
+    .MOH{
+                overflow: hidden;
+                background-color: #333;
+            }
+            /* Navigation links */
+            .MOH a {
+                float: left;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* the subnavigation menu */
+            .SALIHA{
+                float: left;
+                overflow: hidden;
+            }
+            /* Subnav button */
+            .SALIHA .ASSYA {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0px;
+            }
+            
+    /* Add a red background color to navigation links on hover */
+    .MOH a:hover, .SALIHA:hover .ASSYA {
+        left: 285px;
+      background-color: rgb(12, 12, 12);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .CHA-content {
+      display: none;
+      position: absolute;
+      left: 900px;
+      background-color: rgb(8, 8, 8);
+      width: 8.75%;
+      z-index: 1;
+    }
+    .CHA-content a{
+       display: block;
+       padding: 5px 0px;
+    }
+    /* Style the subnav links */
+    .CHA-content a {
+      left: 285px;
+      float: left;
+      color: rgba(250, 249, 249, 0.952);
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .CHA-content a:hover {
+        left: 285px ;
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .SALIHA:hover .CHA-content {
+      display: block;
+    }
+    
+            .cultural{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .library{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+           .zoom div img{
+            -webkit-transform: scale(1); 
+            transform: scale(1);
+            -webkit transition: .3s ease-in-out; 
+            transition: .3s ease-in-out;
+           }
+           .zoom div:hover img{
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);   
+           }
+           h3{
+               color: white;
+           }
+           body table tr td img:hover{
+               transform: rotate(20deg);
+              transform-origin: 90% 90%;
+                 transform:scale(1.5,1.5);
+           }
+           body table tr td p {
+             animation-name: colorchange;
+               animation-duration: 8s;
+               animation-iteration-count: infinite;
+           }
+           @keyframes colorchange{
+              from {color: rgb(255, 0, 128);}
+               to {color: yellow;}
+
+           }
+
+       </style>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+             <table cellspacing="25PX">
+                 <TR></TR>
+                 <TR></TR>
+                 <TR></TR>
+                 <TR>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td><H2><i><a class="cultural"><P align="center">Cultural</P></a></i></H1></td>
+                     <td></td>
+                     <TD><H2><i><a class="library"><P align="center">Library</P></a></i></H2></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD><form><input type="search" name="P" placeholder="recherche"></form></TD>
+                     <TD><form><input type="submit" value="rechercher"></form></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+               </TR>
+             </table>
+            </header>
+            <nav>
+                <table cellspacing="16px">
+                    <tr>
+                        <div class="navbar">
+                        <td></td>
+                        <td></td>
+                        <td class="3"><a href="index.html"><B><h2>Accueil</h2></B></a></td>
+                        <TD></TD>
+                        <td><a href="Citation.html"><B><h2>Citation</h2></B></a></td>
+                        <td></td>
+                        <td>
+                            <!-- the navigation menu -->
+                            <div class="subnav">
+                            <button class="subnavbtn"><a href="livres.html"><B><h2><label form="livres">Livres<i class="navbar"></i></h2>
+                             <div class="subnav-content">
+                                 <a href="adulte.html"><H3>Adultes</H3></a><BR>
+                                 <a href="Enfant.html"><h3>Enfants</h3></a>
+                             </div>
+                         </B></a></button> 
+                         </div>
+                         </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <td> <img src="imag/logo.png" width="100px" height="70px"></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                         <!-- the navigation menu -->
+                         <div class="SALIHA">
+                             <button class="ASSYA"><a href="Movies.html"><B><h2><label form="Movies">Films<i class="MOH"></i></h2>
+                              <div class="CHA-content">
+                                  <a href="fiction.html"><H3>Science-Fiction</H3></a><BR>
+                                     <a href="documentaire.html"><H3>Documentaires</H3></a><br>
+                                     <a href="horreur.html"><H3>horreur</H3></a><BR>
+                                  <a href="tourquie.html"><h3>Tourquie</h3></a>
+                              </div>
+                          </B></a></button> 
+                          </div>
+                        </B></a >
+                        </td>
+                         <TD></TD>
+                        <td><a href="Musique.html"><B><h2>Musique</h2></B></a></td>
+                        <TD></TD>
+                        <td><a href="From.html"><B><h2>Contact</h2></B></a></td>
+                        <td></td>
+                        <td></td>
+                     </div>
+                    </tr>
+                </table>
+              </nav>
+              <br><br><br><br><br><br><br><br><br><br><br>
+        <table cellspacing="80px" width=250>
+            <caption><H2><B><U>Histoires Des Enfants</U></B></H2></caption>
+            <tr>
+                <td><img src="imag/HE1.jfif" width="200PX" height="200px"><br><p><br>C'est l'histoire d'une petite fille <br>que tout le monde aimait surtout sa grand-mere. lui offrit un bonnet en velours rouge. C'est pour cela qu'on l'appelait ainsi.</p> </td>
+                <td><img src="imag/HE2.jfif" width="200PX" height="200px"><br><p><br>resume:<br>petit Ours brun sa reveille une nuit en pleurant.<br>Quand sa maman vient l'embrasser,il n'a plus peur et se rendort.</p></td>
+                <td><img src="imag/HF3.jpg" width="200PX" height="200px"><br><p><br>Les histoires de souffleur de reves sont ecrites selon une methologies(imagine par des professionnels de la petite enfance.</p></td>
+                <td><img src="imag/HE4.jpg" width="200PX" height="200px"><br><p><br>resume:<br>Ca souffle fort,tres meme .C'est l'automne. selon papy, c'est le jour ideal pour partir a l'aventure, jouer au cerf-volant et se rememorer plein de bons moments.une belle surprise attend le duo attendrissant forme par ce grand-pere et son petit-fils</p></td>
+                <td><img src="imag/HE5.jpg" width="200PX" height="200px"><br><p><br>resume:<br>La vache Daisy seme la panique au camping les jeunes enfants seront captives par ce recit plein de charme ,specialement ecrit pour eux. </p></td>
+
+            </tr>
+            <tr>
+                <td><img src="imag/HE6.jfif" width="200PX" height="200px"><br><p><br>les jeunes enfants vont adorer aider Poppy et Sam a chercher des ouefs de Paques en regardant a travers les trous de ce livre cartonne </p></td>
+                <td><img src="imag/HE7.jfif" width="200PX" height="200px"><br><p><br>dans cette histoires c'est pour tout savoir sur l'art</p></td>
+                <td><img src="imag/HE8.jfif" width="200PX" height="200px"><br><p><br>resume:"vous etes les plus merveilleux oursons du monde;:!!" repetaient chaque soir Papa Ours et Maman Ours a leurs trois oursons. Mais un soir, le trois ourson se mirent a se poser des question :"lequel de nous trois Papa et Maman aiment-ils le plus"</p></td>
+                <td><img src="imag/HE9.jfif" width="200PX" height="200px"><br><p><br>L'aventure d'une adolescente pleine de caratere qui part en mer pour se prouver qu'elle a tout d'une exploratrice et poursuivre la quete de ses ancetres. durant son voyage,Vaiana rencontre le demi-dieu autrefois puissant,Maui.Ensemble ,ils traversent l'ocean, dans un periple plein de rebondissement et d'humour,ils vont parcourir des univers a couper le souffle et rencontrer d'enormes creatures marine. </p></td>
+                <td><img src="imag/HE10.jfif" width="200PX" height="200px"><br><p><br>Ce livre pour renconter aux enfants l'histoires de France </p></td>
+
+            </tr>
+        </table>
+        <table cellspacing="80px">
+            <caption><H2><B><U> Pour l'Apprentissage</U></B></H2></caption>
+            <tr>
+                <td><img src="imag/en10.jfif" width="200PX" height="200px"><br><p><br>"Les parents trouveront dans le coffret enfin propre tout ce dont ils besoin pour aider leur enfants a reussir l'apprentissage de la proprete. Apprenez a votre enfants a devenir propre en six etapes faciles, en le soutenant et en le motivant tout au long de ce stade important du developpement." ¨</p></td>
+                <td><img src="imag/en2.jpg" width="200PX" height="200px"><br><p><br>methode syllabique est une methode simple et efficaace pour apprendre a lire et pleine de conseils parents </p></td>
+                <td><img src="imag/en3.jfif" width="200PX" height="200px"><br><p><br>C'est un cahier pour apprendre comment lire et ecrire</p></td>
+                <td><img src="imag/en4.jfif" width="200PX" height="200px"><br><p><br>J'apprends lire avec sami et julie les petits cp sami et julie cp niveau 2 </p></td>
+                <td><img src="imag/en5.jfif" width="200PX" height="200px"><br><p><br>je lis et j'ecris avec lalto Mnuel de l'eleve </p></td>
+
+            </tr>
+            <tr>
+                <td><img src="imag/en6.jfif" width="200PX" height="200px"><br><p><br>un livre-ardoise pour s'entrainer a ecrire les lettres et les chiffres, puis recommencer les majiscules batons les lettres attaches...</p></td>
+                <td><img src="imag/en7.jfif" width="200PX" height="200px"><br><p><br>un excellent cahier d'exercice avec des taches indiques pour favoriser la motricite fine et la concentration de votre enfants</p></td>
+                <td><img src="imag/en8.jpg" width="200PX" height="200px"><br><p><br>le meilleur livre pour habituer vos enfants a lire et ecrire</p></td>
+                <td><img src="imag/en9.jfif" width="200PX" height="200px"><br><p><br>c'est la meme cahier pour aider les enfants a reussir l'apprentissage de la proprete </p></td>
+                <td><img src="imag/en10.jfif" width="200PX" height="200px"><br><p><br>c'est la meme cahier pour aider les enfants a reussir l'apprentissage de la proprete</p></td>
+
+            </tr>
+        </table>
+    </body>
+</html>

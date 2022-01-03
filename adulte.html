@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+           body{
+               background-image: url("imag/POUR LES LIVRES.jpg");
+           }
+           header{
+  position: fixed;
+  width: 1400px;
+  height: 150px;
+  background:rgba(114, 28, 131, 0.952) ;
+}
+
+nav{
+  position: fixed;
+  width: 1400px;
+  height: 100px;
+  background:  rgba(250, 249, 249, 0.952);
+}
+main{
+  width: 1400px;
+  height: 900px;
+  background: rgba(114, 28, 131, 0.952);
+}
+main article{
+  width: 1400px ;
+  height: 920px;
+  float: center;
+}
+aside{
+  width: 50px;
+  float: left;
+  background: lightcoral;
+}
+footer{
+  clear: both;
+  width: 1400px;
+  height: 50px;
+  background:  rgba(114, 28, 131, 0.952); 
+}
+H3{
+ color: rgba(250, 249, 249, 0.952); 
+}
+h2:hover{
+  animation-name:changeColor;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 4;
+}
+H1{
+  color: black;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+  text-decoration: none;
+  color: rgba(114, 28, 131, 0.952);
+  font-style: normal;
+}
+a p{
+  color: black;
+  text-shadow: 2px 2px 4px  rgba(250, 249, 249, 0.952);
+}
+            /* the navigation menu */
+            .navbar{
+                overflow: hidden;
+                background-color: #333;
+            }
+            /* Navigation links */
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* the subnavigation menu */
+            .subnav{
+                float: left;
+                overflow: hidden;
+            }
+            /* Subnav button */
+            .subnav .subnavbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0px;
+            }
+            
+    /* Add a red background color to navigation links on hover */
+    .navbar a:hover, .subnav:hover .subnavbtn {
+        left: 285px;
+      background-color: rgb(12, 12, 12);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 290px;
+      background-color: rgb(8, 8, 8);
+      width: 6%;
+      z-index: 1;
+    }
+    .subnav-content a{
+       display: block;
+       padding: 5px 0px;
+    }
+    /* Style the subnav links */
+    .subnav-content a {
+      left: 285px;
+      float: left;
+      color: rgba(250, 249, 249, 0.952);
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .subnav-content a:hover {
+        left: 285px ;
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    /* the navigation menu */
+    .MOH{
+                overflow: hidden;
+                background-color: #333;
+            }
+            /* Navigation links */
+            .MOH a {
+                float: left;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* the subnavigation menu */
+            .SALIHA{
+                float: left;
+                overflow: hidden;
+            }
+            /* Subnav button */
+            .SALIHA .ASSYA {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0px;
+            }
+            
+    /* Add a red background color to navigation links on hover */
+    .MOH a:hover, .SALIHA:hover .ASSYA {
+        left: 285px;
+      background-color: rgb(12, 12, 12);
+    }
+    
+    /* Style the subnav content - positioned absolute */
+    .CHA-content {
+      display: none;
+      position: absolute;
+      left: 900px;
+      background-color: rgb(8, 8, 8);
+      width: 8.75%;
+      z-index: 1;
+    }
+    .CHA-content a{
+       display: block;
+       padding: 5px 0px;
+    }
+    /* Style the subnav links */
+    .CHA-content a {
+      left: 285px;
+      float: left;
+      color: rgba(250, 249, 249, 0.952);
+      text-decoration: none;
+    }
+    
+    /* Add a grey background color on hover */
+    .CHA-content a:hover {
+        left: 285px ;
+      background-color: #eee;
+      color: black;
+    }
+    
+    /* When you move the mouse over the subnav container, open the subnav content */
+    .SALIHA:hover .CHA-content {
+      display: block;
+    }
+    
+            .cultural{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .library{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .zoom div img{
+            -webkit-transform: scale(1); 
+            transform: scale(1);
+            -webkit transition: .3s ease-in-out; 
+            transition: .3s ease-in-out;
+           }
+           .zoom div:hover img{
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);   
+           }
+           h3{
+               color: white;
+           }
+           body table tr td img:hover{
+               transform: rotate(20deg);
+              transform-origin: 90% 90%;
+                 transform:scale(1.5,1.5);
+           }
+           body table tr td p {
+             animation-name: colorchange;
+               animation-duration: 8s;
+               animation-iteration-count: infinite;
+           }
+           @keyframes colorchange{
+              from {color: rgb(234, 0, 255);}
+               to {color: rgb(14, 14, 13);}
+
+           }
+       </style>
+       <link rel="stylesheet" href="./css/adulte.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+             <table cellspacing="25PX">
+                 <TR></TR>
+                 <TR></TR>
+                 <TR></TR>
+                 <TR>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td><H2><i><a class="cultural"><P align="center">Cultural</P></a></i></H1></td>
+                     <td></td>
+                     <TD><H2><i><a class="library"><P align="center">Library</P></a></i></H2></TD>
+                     <TD></TD>
+                     <td></td>
+                     <TD></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <TD><form><input type="search" name="P" placeholder="recherche"></form></TD>
+                     <TD><form><input type="submit" value="rechercher"></form></TD>
+                     <TD></TD>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+               </TR>
+             </table>
+            </header>
+            <nav>
+                <table cellspacing="16px">
+                    <tr>
+                        <div class="navbar">
+                        <td></td>
+                        <td></td>
+                        <td class="3"><a href="index.html"><B><h2><P>Accueil</P></h2></B></a></td>
+                        <TD></TD>
+                        <td><a href="Citation.html"><B><h2><P>Citation</P></h2></B></a></td>
+                        <td></td>
+                        <td>
+                            <!-- the navigation menu -->
+                            <div class="subnav">
+                            <button class="subnavbtn"><a href="livres.html"><B><h2><label form="livres"><P>Livres</P><i class="navbar"></i></h2>
+                             <div class="subnav-content">
+                                 <a href="adulte.html"><H3>Adultes</H3></a><BR>
+                                 <a href="Enfant.html"><h3>Enfants</h3></a>
+                             </div>
+                         </B></a></button> 
+                         </div>
+                         </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <td> <img src="imag/logo.png" width="100px" height="70px"></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <TD></TD>
+                        <TD></TD>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                         <!-- the navigation menu -->
+                         <div class="SALIHA">
+                             <button class="ASSYA"><a href="Movies.html"><B><h2><label form="Movies"><P>Films</P><i class="MOH"></i></h2>
+                              <div class="CHA-content">
+                                  <a href="fiction.html"><H3>Science-Fiction</H3></a><BR>
+                                     <a href="documentaire.html"><H3>Documentaires</H3></a><br>
+                                     <a href="horreur.html"><H3>horreur</H3></a><BR>
+                                  <a href="tourquie.html"><h3>Tourquie</h3></a>
+                              </div>
+                          </B></a></button> 
+                          </div>
+                        </B></a >
+                        </td>
+                         <TD></TD>
+                        <td><a href="Musique.html"><B><h2><P>Musique</P></h2></B></a></td>
+                        <TD></TD>
+                        <td><a href="From.html"><B><h2><P>Contact</P></h2></B></a></td>
+                        <td></td>
+                        <td></td>
+                     </div>
+                    </tr>
+                </table>
+              </nav>
+              <br><br><br><br><br><br><br><br><br><br><br>
+        <table cellspacing="50px">
+            <caption><H2><B><U>Livres Scientifique</U></B></H2></caption>
+            <tr>
+                <td><img  src="imag/LS1.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS2.jpg" width="200PX" height="200px"></td>
+                <td><img src="imag/LS3.jpg" width="200PX" height="200px"></td>
+                <td><img src="imag/LS4.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS5.jfif" width="200PX" height="200px"></td>
+
+            </tr>
+            <tr>
+                <td><H3><P class="badr">Author:	Merlin Sheldrake <BR>Country: England<BR>Language: English<BR>Publication date: 12 May 2020<BR>Media type:	Print<BR>Pages: 380 <br><a href="./livres/TP2 C  (1).pdf"></a></P></H3></td>
+                <td><H3><P>Auteur:	Christophe Galfard <BR>Lieu de parution: Londres<BR>Language: English<BR>Date de parution: 2015<BR>Éditeur:	Macmillan<BR>Nombre de pages: 448</P></H3></td>
+                <td><H3><P> Auteur : Samir abduhalim <BR>Type de produit : Livre<BR> Langue : français<BR> Année : 2018<BR>Editeur : Auto-Editions<BR>Nombre de pages : 488</P></H3></td>
+                <td><H3><P>Author:	Merlin Sheldrake <BR>Country: England<BR>Language: English<BR>Publication date: 12 May 2020<BR>Media type:	Print<BR>Pages: 380</P></H3></td>
+                <td><H3><P>Author:	Peter H Raven, Georges B. Johnson, Kenneth A. Mason, Jonathan B. Losos, Susan R. Singer<BR>Country: England<BR>Language: d'origine  ANGLAIS (ETATS-UNIS)<BR>Publication date: De Boeck Superieur Biologie 23 Juin 2017<BR>type: Sciences & Techniques</P></H3></td>
+            </tr>
+            <tr>
+                <td><img src="imag/LS6.jfif" width="200PX" height="200px"><br><H3><P>Auteur:	Biographie d'Eric Sartori <BR>Présentation: Broché<BR>Language: français<BR>Date de parution 16/09/1999<BR>Editeur Plon<BR>Nb. de pages 425 pages</P></H3></td>
+                <td><img src="imag/LS7.jfif" width="200PX" height="200px"><br><H3><P>Auteur:	Black Panther, Ta-Nehisi Coates <BR>Language: français<BR>Date de parution  29/05/2019<BR>Nombre de pages: 256</P></H3></td>
+                <td><img src="imag/LS8.jfif" width="200PX" height="200px"><br><H3><P> Auteur : Traduction (Anglais) : Maurice Solovine,Révision de traduction : Daniel Fargue, Pierre Fleury<BR>Champs - Champs sciences<BR> Langue : English<BR> Paru le 27/04/2016<BR>Genre : Sciences<BR>192 pages</P></H3></td>
+                <td><img src="imag/LS9.jfif" width="200PX" height="200px"><br><H3><P>Auteur:	Nicolas Martin <BR>Language: français<BR>Publication date: 04/11/2020<BR>collection: Scientifique<BR>Pages: 160</P></H3></td>
+                <td><img src="imag/LS10.png" width="200PX" height="200px"><br><H3><P>Author:	Surendra Verma<BR>Editeur: Dunod<BR>Language: français<BR>Publication date: octobre 2009<BR>type: Scientifique<br>Nombre de pages: 224</P></H3></td>
+
+            </tr>
+            <tr>
+                <td><img src="imag/LS11.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS12.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS13.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS14.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LS15.jfif" width="200PX" height="200px"></td>
+
+            </tr>
+                <td><h3><P>Auteur:  Max Planck<br>Editeur:Flammarion<br> Date de parution:janvier 2010<br>  Collection: Champs essais</P></h3></td>    
+                <td><h3><P>Auteur: Sylvie Pommier<br> Yves Berthaud<br>  Editeur: Dunod<br> Date de parution:  février 2010 <br>Nombre de pages :288</P></h3></td>
+                <td><h3><P>Auteur: Guy Chateigner<br> Editeur: Dunod<br>  Date de parution:  mai 2008</P></h3></td>
+                <td><h3><P>Auteur: Hugo Coniez<br> Catherine Garcia-Senotier Luc Lannois<br> Editeur: First<br> Date de parution: 28/11/2019<br> Collection: Pour Les Nuls Tout-En-Un</P></h3></td>
+                <td><h3><P>Coordination éditoriale:  Béatrice Salviat<br> Editeur: Magnard<br> Date de parution: 30/04/2019<br> Collection: Enseignement Scientifique Lycée</P></h3></td>
+                
+        </table>
+        <table cellspacing="95px">
+            <caption><H2><B><U>Livres De Langue</U></B></H2></caption>
+            <tr>
+                <td><img src="imag/LL1.jpg" width="200PX" height="200px"><br><p><br>Bascherelle l'anglais pour. grammaire .une grammaire de l'anglais d'aujourd'hui et des exercices de validation</p></td>
+                <td><img src="imag/LL2.jpg" width="200PX" height="200px"><br><p><br>la langue des signes francais est la langue utiliser par une partie des sources de france et par une partie des sourds de suisse</p></td>
+                <td><img src="imag/LL3.jpg" width="200PX" height="200px"><br><p><br>Des expressions courantes et des phrases utiles a retenir pour bien communiquer et ameliorer votre espagnol</p></td>
+                <td><img src="imag/LL1.jfif" width="200PX" height="200px"><be><p><br>la matrise de lague fransaise joue un role crucial dans la reussite scolaire et l'insertion professiennelle et social des enfants et des jeunes </p></be></td>
+                <td><img src="imag/LL4.jfif" width="200PX" height="200px"><br><p><br>Cet ouvrage est destinne en priorite aux immigres qui nouvellement arrive en france ,desirent apprendre efficacement le francais oral et ecrit</p></td>
+       </tr> 
+            <tr>
+                <td><img src="imag/LL5.jpg" width="200PX" height="200px"><br><p><br>une nouvelle langue dans les nuls +des MP3 pour assimiler plus vite</p></td>
+                <td><img src="imag/LL6.jfif" width="200PX" height="200px"><br><p><br>la librairie Gallimard vous renseigne sur l'aventure des langues de l'auteur WALTER</p></td>
+                <td><img src="imag/LL1O.jfif" width="200PX" height="200px"><br><p><br>De la reunion avec un client aux soirees entre potes ...decouvrez tous les registres de langue que vous povez employer en anglais</p></td>
+                <td><img src="imag/LL3.jfif" width="200PX" height="200px"><br><p><br>Cette expression datant du milieu du XVIe siecle signifie que l'on n'arrive pas a retrouver un mot.l'image du "bout de la langue "signifie qu'on le connait pourtant bien meme si on ne s'en souvient pas ponctuellement.</p></td>
+                <td><img src="imag/LL2.jfif" width="200PX" height="200px"><br><p><br>Cette grammaire suffit amplement a la preparation de l'epreuve de langue francaises du brevet d'etudes du premier cycle sous sa forme actuelle</p></td>
+            </tr>
+            <tr>
+                <td><img src="imag/LL6.jfif" width="200PX" height="200px"><br><p><br>la librairie Gallimard vous renseigne sur l'aventure des langues de l'auteur WALTER</p></td>
+                <td><img src="imag/LL7.jfif" width="200PX" height="200px"><br><p><br>Ou se trouver des livres en anglais, que ce soit des e-books, des livres papier ou des livres audio ,et ou trouver des livres en gratuit ou en payant  </p></td>
+                <td><img src="imag/LL8.jfif" width="200PX" height="200px"><br><p><br>Il n'ya pas de secret pour etre bon en traduction.il faut lire regulierement dans les deux langues et faire des traduction le plus souvent possible</p></td>
+                <td><img src="imag/LL9.jfif" width="200PX" height="200px"><br><p><br>ce livre est pour ameliorer votre ecriture a l'aide des expression clair et efficace</p></td>
+                <td><img src="imag/LL11.jfif" width="200PX" height="200px"><br><p><br>trame de langue .Usage et metrissage linguistique dans l'histoire du maghreb</p></td>
+            </tr>
+        </table>
+        <table cellspacing="100px">
+            <caption><H2><B><U>Livres De Littérature</U></B></H2></caption>
+            <tr>
+                <td><img src="imag/LV1.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV2.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV3.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV4.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV5.jfif" width="200PX" height="200px"></td>
+            </tr>
+            <tr>
+               <td> <a href="imag/histoire 1.pdf">livre pdf</a></td> 
+               <td> <a href="imag/histoire2.pdf"> livre pdf</a></td>
+               <td> <a href="imag/histoire3.pdf">livre pdf</a></td>
+               <td><a</td>
+               <td><a href="imag/histoire4.pdf">livre pdf</a></td>
+               
+            </tr>
+            <tr>
+                <td><img src="imag/LV6.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV7.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV8.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV9.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV10.jfif" width="200PX" height="200px"></td>
+            </tr>
+            <td><a href="imag/histoire5.pdf">livre pdf</a></td>
+            <td><a href="imag/histoire6.pdf">livre pdf</a></td>
+            <td><a href="imag/histoire6.pdf">livre pdf</a></td>
+            <td><a href="imag/histoire7.pdf">livre pdf</a></td>
+            <td><a href="imag/histoire7.pdf">livre pdf</a></td>
+            
+
+
+            <tr>
+                <td><img src="imag/LV20.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV21.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV22.jfif" width="200PX" height="200px"></td>
+                <td><img src="imag/LV23.jpg" width="200PX" height="200px"></td>
+                <td><img src="imag/LV24.jfif" width="200PX" height="200px"></td>
+            </tr>
+            <tr>
+                <td><a href="imag/histoire8.pdf">livre pdf</a></td>
+                <td><a href="imag/histoire9.pdf">livre pdf</a></td>
+                <td><a href="imag/histoire 10.pdf">livre pdf</a></td>
+                <td><a href="imag/histoire11.pdf">livre pdf</a></td>
+                <td><a href="imag/histoire12.pdf">livre pdf</a></td>
+            </tr>
+        </table>
+
+        
+    </body>
+</html>
